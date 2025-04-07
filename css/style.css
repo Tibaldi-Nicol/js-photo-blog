@@ -9,7 +9,8 @@
 /* ================= LAYOUT GENERALE ================= */
 
 h1,h2,h3{
-    font-family: ‘Edu Tas Beginner’, sans-serif;
+    font-family: 'Edu TAS Beginner', sans-serif;
+
 }
 
 header{
@@ -20,4 +21,20 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid black;
 }
+
+.sfondo{
+    background-image: url(../img/cork.png);
+    width: 100%;
+    height: 1200px;
+}
+
+/* ================= card ================= */
+
+.card{
+    background-color: white;
+    width: 600px;
+    height: 600px;
+}
+
