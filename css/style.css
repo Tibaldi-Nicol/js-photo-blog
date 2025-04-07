@@ -55,6 +55,7 @@ header{
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+    position: relative;
 }
 
 .photo{
@@ -69,4 +70,16 @@ header{
     height: 78px;
     width: 92%;
 }
+
+.pin-image{
+
+    z-index: 1;
+    position: absolute;
+    top: -15px;
+
+    
+    
+    
+}
+
 
