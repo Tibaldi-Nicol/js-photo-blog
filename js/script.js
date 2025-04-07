@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function(){
     //creo variabile che contine il link api
     const apiUrl = 'https://lanciweb.github.io/demo/api/pictures/';
     //seleziono i div dove ci saranno le foto
-    const photoDiv = document.querySelectorAll('.photo');
+    const photoDiv = document.querySelectorAll('.photo ');
+    const titoloDiv = document.querySelectorAll('.pen')
     //faccio la richiesta api con fetch
     fetch(apiUrl)
     //trasformo la risposta del server in json
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
      //per ogni div (foreach) (li scorre uno per uno)prende in fila un immagine che è dentro a larray (index)
      //index è la poszione (0,1,2) e scorre da solo
+
      photoDiv.forEach((div, index)=>{
         if (datiRicevuti[index]) {
             //per mettere il backgrounimage sotto forma di link e aggiusto tutto con css
@@ -29,6 +31,13 @@ document.addEventListener('DOMContentLoaded', function(){
             //index = posizione attuale (prima, seconda, terz e oltre).
 
             //data[index] = immagine da mettere in quel posto.
+            titoloDiv[index].textContent = datiRicevuti[index].title || 'Senza titolo';
+
+            //datiRicevuti[index].title => prende il titolo associato all'immagine.
+
+            //titoloDiv[index] => seleziona il div corrispondente con classe .pen nella posizione giusta.
+
+            //textContent = ... => scrive il testo dentro quel div.
      })
     })
     //se per qualche ragione non arrivano le immagini da un errore
