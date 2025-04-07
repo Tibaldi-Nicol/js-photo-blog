@@ -9,6 +9,15 @@
 /* ================= LAYOUT GENERALE ================= */
 
 h1,h2,h3{
-    font-family: Edu;
+    font-family: ‘Edu Tas Beginner’, sans-serif;
 }
 
+header{
+    background-image: url(../img/wall.png);
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
