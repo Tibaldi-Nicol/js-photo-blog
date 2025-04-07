@@ -50,5 +50,23 @@ header{
     width: 300px;
     height: 400px;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.photo{
+    background-color: yellow;
+    width: 92%;
+    height: 300px;
+    
+}
+
+.pen{
+    background-color: red;
+    height: 78px;
+    width: 92%;
 }
 
