@@ -99,3 +99,7 @@ document.addEventListener('DOMContentLoaded', function(){
  // 6. La funzione on() viene chiamata quando l'utente clicca su una foto
  // 7. La funzione off() viene chiamata quando l'utente clicca sull'overlay (tramite onclick="off()" nell'HTML)
  // 8. In caso di errore nel caricamento delle immagini, mostra un messaggio nella console
+
+
+ //usare api,fetch per prendere dati/axios 
+ //axios porta gia i dati in json mentre fetch fa un passaggio in piu
