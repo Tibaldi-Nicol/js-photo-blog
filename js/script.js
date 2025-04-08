@@ -1,5 +1,4 @@
 //aspetto che la pagina si carica tutta e dopo parte la funzione
-
 document.addEventListener('DOMContentLoaded', function(){
     //creo variabile che contine il link api
     const apiUrl = 'https://lanciweb.github.io/demo/api/pictures/';
@@ -53,6 +52,14 @@ document.addEventListener('DOMContentLoaded', function(){
         console.log('Errore nel recupero dell\'immagine:', error);
     });
 
-
-
 })
+
+// Definisco le funzioni on e off fuori dalla funzione DOMContentLoaded
+// per renderle accessibili globalmente
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+  
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
