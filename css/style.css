@@ -124,6 +124,16 @@ header{
     -ms-transform: translate(-50%,-50%);
   }
 
+  .card-photo:hover{
+    width: 30%;
+    
+
+    
+    background-color: rgb(200, 215, 216);
+
+
+  }
+
 
 
 
